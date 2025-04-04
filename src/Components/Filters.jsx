@@ -1,10 +1,14 @@
-import React from 'react'
+import React from 'react';
+import FilterName from './FilterName';
+import FilterSpecies from './FilterSpecies';
 
-function Filters() {
+function Filters({onChangeName, onChangeSpecie}) {
   return (
-    <div>
-      
-    </div>
+    <form action="">
+        <h3>Filtrar por...</h3>
+        <FilterName onChangeName={onChangeName}/>
+        <FilterSpecies onChangeSpecie={onChangeSpecie} />
+    </form>
   )
 }
 

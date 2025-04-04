@@ -1,19 +1,16 @@
-import React from 'react';
-import CharacterCard from './CharacterCard';
+import React from "react";
+import CharacterCard from "./CharacterCard";
 
 function CharacterList({ charactersData }) {
   return (
-      <section>
-        <ul>
-          {
-            charactersData.map((character) => {
-              return <CharacterCard characterData={character}/>
-            })
-          }
-          
-        </ul>
-      </section>
-  )
+    <section>
+      <ul>
+        {charactersData.map((character) => {
+          return <CharacterCard characterData={character} key={character.id} />;
+        })}
+      </ul>
+    </section>
+  );
 }
 
-export default CharacterList
+export default CharacterList;
