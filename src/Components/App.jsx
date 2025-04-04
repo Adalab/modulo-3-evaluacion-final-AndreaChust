@@ -25,7 +25,7 @@ function App() {
   };
 
   const filteredCharacters = characters.filter((character) => {
-    return character.name.toLowerCase().includes(filterName);
+    return character.name.toLowerCase().includes(filterName.toLowerCase());
   }).filter((character) => {
     // if (specie === "") {
     //   return true;
