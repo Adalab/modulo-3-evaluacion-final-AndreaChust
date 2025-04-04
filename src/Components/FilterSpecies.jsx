@@ -6,7 +6,7 @@ function FilterSpecies({ onChangeSpecie }) {
   };
 
   return (
-    <div>
+    <div className="container">
       <label htmlFor="specie">Especie: </label>
       <label htmlFor="Human">Human</label>
       <input

@@ -5,7 +5,7 @@ function FilterName({ onChangeName }) {
     onChangeName(ev.target.value);
   };
   return (
-    <div>
+    <div className="container">
       <label htmlFor="name">Nombre</label>
       <input type="text" id="name" onChange={handleChangeName} />
     </div>

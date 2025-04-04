@@ -7,7 +7,7 @@ const getCharactersFromApi = () => {
                     urlImage: character.image,
                     name: character.name,
                     species: character.species,
-                    espisode: character.episode.length,
+                    episode: character.episode.length,
                     origin: character.origin.name,
                     status: character.status,
                     id: character.id

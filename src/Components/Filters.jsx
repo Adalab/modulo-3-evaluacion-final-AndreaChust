@@ -5,7 +5,7 @@ import FilterSpecies from './FilterSpecies';
 function Filters({onChangeName, onChangeSpecie}) {
   return (
     <form action="">
-        <h3>Filtrar por...</h3>
+        <h4>Filtrar por...</h4>
         <FilterName onChangeName={onChangeName}/>
         <FilterSpecies onChangeSpecie={onChangeSpecie} />
     </form>

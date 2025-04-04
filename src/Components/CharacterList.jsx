@@ -4,7 +4,7 @@ import CharacterCard from "./CharacterCard";
 function CharacterList({ charactersData }) {
   return (
     <section>
-      <ul>
+      <ul className="list">
         {charactersData.map((character) => {
           return <CharacterCard characterData={character} key={character.id} />;
         })}

@@ -1,0 +1,53 @@
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    max-width: 100%;
+    &__imglogo {
+        width: 50%;
+        height: auto; 
+        max-width: 300px; 
+        min-width: 100px; 
+          }
+          
+    }
+
+
+body {
+    background-color: black;
+}
+
+p {
+    background-color: #09AFC4;
+}
+
+h4 {
+    background-color: #09AFC4;
+}
+
+h1 {
+    background-color: #09AFC4;
+}
+
+.container {
+    background-color: #09AFC4;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cardDetail {
+    display: flex;
+    background-color: #09AFC4;
+    width: 30vw;
+    
+    &__contcard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+    }
+}
