@@ -1,10 +1,12 @@
 import React from 'react'
 
-function CharacterCard() {
+function CharacterCard({ characterData }) {
   return (
-    <div>
-      
-    </div>
+    <li>
+      <img src={characterData.urlImage} alt="" />
+      <h4>{characterData.name}</h4>
+      <p>{characterData.species}</p>
+    </li>
   )
 }
 

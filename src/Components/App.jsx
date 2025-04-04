@@ -1,8 +1,20 @@
 import "../scss/App.scss";
 import CharacterList from "./CharacterList";
 import Filters from "./Filters";
+import { useEffect, useState } from "react";
+import getCharactersFromApi from "../Services/getCharactersFromApi";
 
 function App() {
+
+    const [characters, setCharacters] = useState([]);
+
+    useEffect(() => {
+       getCharactersFromApi().then(charactersList => {
+        setCharacters(charactersList)
+       });
+       
+    }, []);
+
   return (
     <>
       <header>
@@ -10,7 +22,7 @@ function App() {
       </header>
       <Filters />
       <main>
-        <CharacterList />
+        <CharacterList charactersData={characters} />
       </main>
     </>
   );

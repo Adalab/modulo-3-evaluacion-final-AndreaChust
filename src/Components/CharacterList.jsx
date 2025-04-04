@@ -1,10 +1,17 @@
 import React from 'react';
 import CharacterCard from './CharacterCard';
 
-function CharacterList() {
+function CharacterList({ charactersData }) {
   return (
       <section>
-        <ul><CharacterCard /></ul>
+        <ul>
+          {
+            charactersData.map((character) => {
+              return <CharacterCard characterData={character}/>
+            })
+          }
+          
+        </ul>
       </section>
   )
 }
