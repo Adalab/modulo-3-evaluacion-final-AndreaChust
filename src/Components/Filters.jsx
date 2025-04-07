@@ -4,8 +4,8 @@ import FilterSpecies from './FilterSpecies';
 
 function Filters({onChangeName, onChangeSpecie}) {
   return (
-    <form action="">
-        <h4>Filtrar por...</h4>
+    <form className="form-filter" action="">
+        <h4 className='form-filter__text' >Filtrar por...</h4>
         <FilterName onChangeName={onChangeName}/>
         <FilterSpecies onChangeSpecie={onChangeSpecie} />
     </form>

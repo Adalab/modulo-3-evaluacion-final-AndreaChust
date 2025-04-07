@@ -7,7 +7,7 @@ function FilterName({ onChangeName }) {
   return (
     <div className="container">
       <label htmlFor="name">Nombre</label>
-      <input type="text" id="name" onChange={handleChangeName} />
+      <input type="text" id="name" onChange={handleChangeName} className="search-input" placeholder="Ej: Summer Smith" />
     </div>
   );
 }

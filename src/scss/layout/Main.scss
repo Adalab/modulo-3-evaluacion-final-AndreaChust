@@ -15,14 +15,23 @@
 
 body {
     background-color: black;
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 0 0 5px #6dffe0, 0 0 8px #6dffe0aa;
+    
+
+      
 }
 
 p {
     background-color: #09AFC4;
+    display: flex;
+    justify-content: center;
 }
 
 h4 {
     background-color: #09AFC4;
+    display: flex;
+    justify-content: center;
 }
 
 h1 {
@@ -30,13 +39,50 @@ h1 {
 }
 
 .container {
-    background-color: #09AFC4;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    background-color: #ffffff10;
+    padding: 1rem;
+
+    &__human {
+        background-color: #09afc4;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 0.9rem;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        position: relative;
+
+        &__specie {
+            background-color: #09afc4;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            position: relative;
+        }
+    }
 }
 
 .list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+//     flex-wrap: wrap;
+//     gap: 20px;
+// }
+
 }
 
 .cardDetail {
@@ -47,7 +93,48 @@ h1 {
     &__contcard {
         display: flex;
         flex-direction: column;
+        text-align: center;
         justify-content: center;
         padding: 20px;
+        
     }
 }
+
+.search-input {
+    width: 100%;
+    max-width: 250px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 2px solid #09afc4;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #333;
+    outline: none;
+    transition: all 0.3s ease;
+  
+    &:focus {
+      border-color: #6dffe0;
+      box-shadow: 0 0 8px #6dffe0aa;
+    }
+  
+    &::placeholder {
+      color: #999;
+      font-style: italic;
+    }
+  }
+  
+  .card-list {
+    border-radius: 80px;
+    border: solid black 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .form-filter {
+    background-color: #333;
+
+    &__text{
+        background-color: transparent;
+    }
+  }
+

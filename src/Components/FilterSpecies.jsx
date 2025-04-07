@@ -8,7 +8,7 @@ function FilterSpecies({ onChangeSpecie }) {
   return (
     <div className="container">
       <label htmlFor="specie">Especie: </label>
-      <label htmlFor="Human">Human</label>
+      <label htmlFor="Human" className="container__human">Human</label>
       <input
         type="radio"
         id="Human"
@@ -16,7 +16,7 @@ function FilterSpecies({ onChangeSpecie }) {
         value="Human"
         onChange={handleRadio}
       />
-      <label htmlFor="Alien">Alien</label>
+      <label htmlFor="Alien" className="container__human__specie">Alien</label>
       <input
         type="radio"
         id="Alien"
