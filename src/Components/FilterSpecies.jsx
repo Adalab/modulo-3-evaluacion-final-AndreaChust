@@ -1,6 +1,6 @@
 import React from "react";
 
-function FilterSpecies({ onChangeSpecie }) {
+function FilterSpecies({ onChangeSpecie, specie }) {
   const handleRadio = (ev) => {
     onChangeSpecie(ev.target.value);
   };
@@ -14,6 +14,7 @@ function FilterSpecies({ onChangeSpecie }) {
         id="Human"
         name="specie"
         value="Human"
+        checked={specie === "Human"}
         onChange={handleRadio}
       />
       <label htmlFor="Alien" className="container__human__specie">Alien</label>
@@ -22,6 +23,7 @@ function FilterSpecies({ onChangeSpecie }) {
         id="Alien"
         name="specie"
         value="Alien"
+        checked={specie === "Alien"}
         onChange={handleRadio}
       />
     </div>

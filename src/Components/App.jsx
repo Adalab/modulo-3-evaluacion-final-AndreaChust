@@ -61,7 +61,7 @@ function App() {
         <Routes>
           <Route path="/" element={(
             <>
-                    <Filters onChangeName={changeName} onChangeSpecie={changeSpecie} />
+                    <Filters onChangeName={changeName} onChangeSpecie={changeSpecie} filterName={filterName} specie={specie} />
                     <CharacterList charactersData={filteredCharacters} />
                     </>
           )} />
